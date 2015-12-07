@@ -5,12 +5,18 @@
  */
 
 var gulp = require('gulp'),
+  clean = require('gulp-clean'),
   concat = require('gulp-concat'),
   nodemon = require('gulp-nodemon'),
   ts = require('gulp-typescript'),
   sourcemaps = require('gulp-sourcemaps');
 
-gulp.task('script-nodejs', function () {
+gulp.task('clean', function () {
+  return gulp.src('dist', {read: false})
+    .pipe(clean());
+});
+
+gulp.task('script-nodejs', ['clean'], function () {
   gulp.src(['app.ts', 'src/**/*.ts'])
     .pipe(sourcemaps.init()) // This means sourcemaps will be generated
     .pipe(ts({
