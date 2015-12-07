@@ -26,6 +26,9 @@ build/Release
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 
-# ignor dist compilated folder
+# ignore dist compilated folder
 dist
 definitions
+
+# ignore Webstorm config
+.idea
