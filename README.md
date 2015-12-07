@@ -23,10 +23,12 @@ IDE compatible avec Typescript :
 
 ## Setup de projet
  * [https://pontifex.azurewebsites.net/my-typescript-project-structure-with-gulp/](https://pontifex.azurewebsites.net/my-typescript-project-structure-with-gulp/)
+
 ## Handbook / Cheat sheet
  * [http://www.typescriptlang.org/Handbook](http://www.typescriptlang.org/Handbook)
  * [https://www.sitepen.com/blog/2013/12/31/typescript-cheat-sheet/](https://www.sitepen.com/blog/2013/12/31/typescript-cheat-sheet/) (maybe outdated)
  * [https://www.sitepen.com/blog/2013/12/31/definitive-guide-to-typescript/](https://www.sitepen.com/blog/2013/12/31/definitive-guide-to-typescript/) (maybe outdated)
+
 ## Tuto
  * [http://www.codeproject.com/Articles/871622/Writing-a-chat-server-using-Node-js-TypeScript-and](http://www.codeproject.com/Articles/871622/Writing-a-chat-server-using-Node-js-TypeScript-and)
  * [https://github.com/Microsoft/TypeScriptSamples/tree/master/imageboard](https://github.com/Microsoft/TypeScriptSamples/tree/master/imageboard)
