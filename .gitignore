@@ -32,3 +32,7 @@ definitions
 
 # ignore Webstorm config
 .idea
+
+# ignore map and generated js files
+src/**/*.js
+src/**/*.map
