@@ -17,7 +17,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('script-nodejs', ['clean'], function () {
-  gulp.src(['app.ts', 'src/**/*.ts'])
+  return gulp.src(['app.ts', 'src/**/*.ts'])
     .pipe(sourcemaps.init()) // This means sourcemaps will be generated
     .pipe(ts({
       module: 'commonjs'
@@ -28,7 +28,7 @@ gulp.task('script-nodejs', ['clean'], function () {
 });
 
 gulp.task('script-front', function () {
-  gulp.src(['app.ts', 'src/**/*.ts'])
+  return gulp.src(['app.ts', 'src/**/*.ts'])
     .pipe(sourcemaps.init()) // This means sourcemaps will be generated
     .pipe(ts({
       module: 'commonjs',
@@ -41,14 +41,19 @@ gulp.task('script-front', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(['./src/**/*.ts'], ['script-nodejs']);
+  return gulp.watch(['./src/**/*.ts'], ['script-nodejs']);
 });
 
-gulp.task('nodemon', ['script-nodejs', 'watch'], function () {
-  nodemon({
-    script: 'dist/app.js',
+gulp.task('nodemon', ['script-nodejs'], function () {
+  return nodemon({
+    script: __dirname + '/dist/app.js',
     ext: 'ts html',
-    env: {'NODE_ENV': 'development'}
+    env: {
+      'NODE_ENV': 'development',
+      'configServerPath': __dirname + '/dist/config/config.js',
+      'loggerPath': 'server.log'
+    },
+    tasks: ['script-nodejs']
   });
 });
 

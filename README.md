@@ -23,6 +23,7 @@ IDE compatible avec Typescript :
 
 ## Setup de projet
  * [https://pontifex.azurewebsites.net/my-typescript-project-structure-with-gulp/](https://pontifex.azurewebsites.net/my-typescript-project-structure-with-gulp/)
+ * [http://blog.geraldpereira.com/rest/crud/2015/09/10/nodejs-express-typescript.html](http://blog.geraldpereira.com/rest/crud/2015/09/10/nodejs-express-typescript.html)
 
 ## Handbook / Cheat sheet
  * [http://www.typescriptlang.org/Handbook](http://www.typescriptlang.org/Handbook)

@@ -5,7 +5,10 @@
     "express": "~4.13.3",
     "body-parser": "~1.14.1",
     "serve-favicon": "~2.3.0",
-    "cookie-parser": "~1.4.0"
+    "cookie-parser": "~1.4.0",
+    "helmet": "~0.15.0",
+    "minimist": "~1.2.0",
+    "winston": "~2.1.1"
   },
   "description": "",
   "main": "app.js",
