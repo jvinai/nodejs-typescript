@@ -1,9 +1,17 @@
 # nodejs-typescript
 
 # Pré-requis
-``` 
-npm install -g typescript
-```
+
+NPM is require.
+
+* ``` npm install -g typescript ```
+* ``` npm install ``` 
+* ```tsd install ```
+
+# Lancer le serveur
+
+``` gulp serve ``` ou ``` npm start ```
+
 # Outils
 
 IDE compatible avec Typescript :
@@ -16,8 +24,8 @@ IDE compatible avec Typescript :
 # Do not forget
 
 ## Export/Import
- * Ne pas oublier d'ajouter les ``` export default X ``` pour classe/interface/abstract
- * ``` import X from Y; ``` pour Typescript import et ``` var X = require('X'); ``` pour du Javascript
+ * Ne pas oublier d'ajouter les ``` export default X ``` pour classe/interface/abstract et ``` export = X ``` pour les objets JS.
+ * ``` import X from Y; ``` pour Typescript import et ``` var X = require('X'); ``` pour un module Javascript
 
 # Liens importants 
 
