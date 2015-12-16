@@ -22,6 +22,6 @@ var logger = new winston.Logger({
         new (winston.transports.Console)(opts),
         new (winston.transports.File)(opts)
     ]
-})
+});
 
 export default logger;

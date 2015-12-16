@@ -6,7 +6,7 @@ NPM is require.
 
 * ``` npm install -g typescript ```
 * ``` npm install ``` 
-* ```tsd install ```
+* ``` tsd install ```
 
 # Lancer le serveur
 

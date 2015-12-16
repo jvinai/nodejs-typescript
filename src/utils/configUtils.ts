@@ -9,6 +9,6 @@ var ConfigUtils = {
         }
         return argv.c ? argv.c : process.env.configServerPath;
     }
-}
+};
 
 export = ConfigUtils;
