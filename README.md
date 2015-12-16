@@ -8,9 +8,15 @@ NPM is require.
 * ``` npm install ``` 
 * ``` tsd install ```
 
-# Lancer le serveur
+# GULP/NPM
+
+## Lancer le serveur
 
 ``` gulp serve ``` ou ``` npm start ```
+
+## Lancer le serveur de mock pour l'oauth2
+
+``` gulp oauth ``` 
 
 # Outils
 
