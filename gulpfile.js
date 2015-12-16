@@ -57,6 +57,13 @@ gulp.task('nodemon', ['script-nodejs'], function () {
   });
 });
 
+gulp.task('nodemon-oauth', function () {
+  return nodemon({
+    script: __dirname + '/mock/oauth.js',
+    ext: 'nope'
+  });
+});
+
 /*gulp.task('nodemon', ['generate-js', 'watch'], function () {
  nodemon({
  script: 'built/app.js'
@@ -64,3 +71,4 @@ gulp.task('nodemon', ['script-nodejs'], function () {
  });
  */
 gulp.task('serve', ['nodemon']);
+gulp.task('oauth', ['nodemon-oauth']);
