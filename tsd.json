@@ -3,7 +3,7 @@
   "repo": "borisyankov/DefinitelyTyped",
   "ref": "master",
   "path": "typings",
-  "bundle": "typings/tsd.d.ts",
+  "bundle": "typings/tsdx.d.ts",
   "installed": {
     "node/node.d.ts": {
       "commit": "c3ab375b371b7b4204adee3b1209baecd81cec02"
@@ -17,14 +17,11 @@
     "mime/mime.d.ts": {
       "commit": "c3ab375b371b7b4204adee3b1209baecd81cec02"
     },
-    "angularjs/angular.d.ts": {
-      "commit": "c3ab375b371b7b4204adee3b1209baecd81cec02"
-    },
-    "angular-ui-router/angular-ui-router.d.ts": {
-      "commit": "c3ab375b371b7b4204adee3b1209baecd81cec02"
-    },
     "jquery/jquery.d.ts": {
       "commit": "c3ab375b371b7b4204adee3b1209baecd81cec02"
+    },
+    "angular2/angular2.d.ts": {
+      "commit": "11322524f8db9cdb921427cad84cd22fe2d4f965"
     }
   }
 }

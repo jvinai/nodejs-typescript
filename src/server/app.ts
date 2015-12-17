@@ -1,4 +1,4 @@
-/// <reference path="../typings/tsd.d.ts" />
+/// <reference path="../../typings/tsd.d.ts" />
 
 var bodyParser = require('body-parser'),
     configUtils = require('./utils/configUtils'),

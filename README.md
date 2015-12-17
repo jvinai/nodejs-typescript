@@ -33,6 +33,10 @@ IDE compatible avec Typescript :
  * Ne pas oublier d'ajouter les ``` export default X ``` pour classe/interface/abstract et ``` export = X ``` pour les objets JS.
  * ``` import X from Y; ``` pour Typescript import et ``` var X = require('X'); ``` pour un module Javascript
 
+# Questions
+
+## Peux ton avoir un fichier .d.ts pour les modules back et un autre pour les modules front ?
+
 # Liens importants 
 
 ## Setup de projet
