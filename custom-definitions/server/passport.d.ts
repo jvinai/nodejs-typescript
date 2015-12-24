@@ -1,0 +1,1 @@
+declare module 'passport' { var _:any;export default _;}

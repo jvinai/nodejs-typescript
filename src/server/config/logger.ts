@@ -1,4 +1,4 @@
-/// <reference path="../../../typings/tsd.d.ts" />
+/// <reference path="../../../typings/tsdx.d.ts" />
 
 var path = require('path'),
     winston = require('winston');

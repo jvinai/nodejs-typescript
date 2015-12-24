@@ -1,0 +1,1 @@
+declare module 'passport-oauth2' { var _:any;export default _;}

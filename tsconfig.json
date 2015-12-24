@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sortOutput": true,
+    "sourceMap": true,
+    "outDir": "dist"
+  },
+  "filesGlob": [
+    "./typings/tsdx.d.ts",
+    "./custom-definitions/server.d.ts",
+    "./src/server/**/*.ts"
+  ],
+  "files": [
+    "./typings/tsdx.d.ts",
+    "./custom-definitions/server.d.ts",
+    "./src/server/app.ts"
+  ]
+}

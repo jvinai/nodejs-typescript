@@ -1,0 +1,1 @@
+declare module 'serve-static' { var _:any;export default _;}

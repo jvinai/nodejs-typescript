@@ -1,0 +1,1 @@
+declare module 'serve-favicon' { var _:any;export default _;}

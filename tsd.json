@@ -7,21 +7,6 @@
   "installed": {
     "node/node.d.ts": {
       "commit": "c3ab375b371b7b4204adee3b1209baecd81cec02"
-    },
-    "express/express.d.ts": {
-      "commit": "c3ab375b371b7b4204adee3b1209baecd81cec02"
-    },
-    "serve-static/serve-static.d.ts": {
-      "commit": "c3ab375b371b7b4204adee3b1209baecd81cec02"
-    },
-    "mime/mime.d.ts": {
-      "commit": "c3ab375b371b7b4204adee3b1209baecd81cec02"
-    },
-    "jquery/jquery.d.ts": {
-      "commit": "c3ab375b371b7b4204adee3b1209baecd81cec02"
-    },
-    "angular2/angular2.d.ts": {
-      "commit": "11322524f8db9cdb921427cad84cd22fe2d4f965"
     }
   }
 }

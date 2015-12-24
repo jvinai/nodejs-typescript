@@ -1,0 +1,1 @@
+declare module 'test' { var _:any;export default _;}

@@ -1,0 +1,1 @@
+declare module 'winston' { var _:any;export default _;}

@@ -1,0 +1,1 @@
+declare module 'cookie-parser' { var _:any;export default _;}

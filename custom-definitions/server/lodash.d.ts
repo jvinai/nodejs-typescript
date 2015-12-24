@@ -1,0 +1,1 @@
+declare module 'lodash' { var _:any;export default _;}

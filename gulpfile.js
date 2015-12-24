@@ -12,6 +12,8 @@ var gulp = require('gulp'),
   tslint = require('gulp-tslint'),
   sourcemaps = require('gulp-sourcemaps');
 
+var tsProject = ts.createProject('tsconfig.json');
+
 var frontSrc = 'src/front/**/*.ts',
   serverSrc = 'src/server/**/*.ts';
 
@@ -41,11 +43,10 @@ gulp.task('nodemon-oauth', function () {
 });
 
 gulp.task('script-nodejs', ['clean'], function () {
-  return gulp.src([serverSrc])
-    .pipe(sourcemaps.init()) // This means sourcemaps will be generated
-    .pipe(ts({
-      module: 'commonjs'
-    }))
+  var tsResult = tsProject.src()
+    .pipe(sourcemaps.init())
+    .pipe(ts(tsProject));
+  return tsResult
     .js
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('dist'));
@@ -54,10 +55,7 @@ gulp.task('script-nodejs', ['clean'], function () {
 gulp.task('script-front', function () {
   return gulp.src([frontSrc])
     .pipe(sourcemaps.init()) // This means sourcemaps will be generated
-    .pipe(ts({
-      module: 'commonjs',
-      sortOutput: true
-    }))
+    .pipe(ts())
     .js
     .pipe(concat('app.js'))
     .pipe(sourcemaps.write()) // Now the sourcemaps are added to the .js file
@@ -65,7 +63,7 @@ gulp.task('script-front', function () {
 });
 
 gulp.task('tslint', function () {
-   return gulp.src([serverSrc, frontSrc])
+  return gulp.src([serverSrc, frontSrc])
     .pipe(tslint())
     .pipe(tslint.report('verbose'));
 });
