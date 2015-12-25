@@ -13,14 +13,14 @@
   "files": [
     "./typings/tsdx.d.ts",
     "./custom-definitions/server.d.ts",
-    "./src/server/classes/Dog.ts",
     "./src/server/app.ts",
-    "./src/server/classes/User.ts",
-    "./src/server/config/logger.ts",
-    "./src/server/config/config.ts",
-    "./src/server/enums/FoodType.ts",
-    "./src/server/interfaces/Animal.ts",
+    "./src/server/utils/configUtils.ts",
     "./src/server/routes/auth.ts",
-    "./src/server/utils/configUtils.ts"
+    "./src/server/interfaces/Animal.ts",
+    "./src/server/enums/FoodType.ts",
+    "./src/server/config/config.ts",
+    "./src/server/config/logger.ts",
+    "./src/server/classes/Dog.ts",
+    "./src/server/classes/User.ts"
   ]
 }

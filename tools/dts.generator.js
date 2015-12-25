@@ -3,10 +3,11 @@
 var argv = require('minimist')(process.argv.slice(2)),
   bluebird = require('bluebird'),
   fs = require('fs'),
+  path = require('path'),
   _ = require('lodash');
 
-var definitionFolder = __dirname + '/custom-definitions/server/';
-var allDefinitionFile = __dirname + '/custom-definitions/server.d.ts';
+var definitionFolder = path.normalize(__dirname + '/../custom-definitions/server/');
+var allDefinitionFile = path.normalize(__dirname + '/../custom-definitions/server.d.ts');
 
 var template = "declare module 'MODULENAME' { \r\
 var _:any;\r\
