@@ -20,7 +20,13 @@ NPM is require.
 
 # Utiliser le générateur de définition file pour Typescript
 
-Il suffit de lancer la commande ```node dts.generator.js X Y Z``` où X Y Z sont les nouvelles dépendances JS installées dont vous voulez générer les fichiers d.ts par defaut.
+Il suffit de lancer le script dts.generator.js via la commande ```node ``` dans le dossier /tools et d'ajouter en argument les nouvelles dépendances JS installées dont vous voulez générer les fichiers d.ts par defaut.
+
+Exemple : ```node dts.generator.js express passport winston```
+
+# Utiliser l'outil de mise à jour du fichier tsconfig.json pour les paths des fichiers .ts
+
+Il suffit de lancer le script updateTSConfig.js via la commande ``` node ``` dans le dossier /tools.
 
 # Importants
 
